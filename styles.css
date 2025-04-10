@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #1f242d;
+    font-family: 'Poppins', 'Montserrat', sans-serif;;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    background-color: #cccccc;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul a {
+    font-family: 'Poppins', sans-serif;
+    padding: 30px;
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: 550;
+    color: #1f242d;
+    background-color: #cccccc;
+    z-index: 999;
+    transition: 0.5s;
+}
+
+.title-utama {
+    font-size: 25px;
+    text-decoration: none;
+    color: #1f242d;
+    font-weight: 600;
+    background-color: #cccccc;
+}
+
+.navbar ul li:hover a {
+    color:#60B5FF;
+}
+
+.porto-container {
+    width: 100%;
+    height: 100vh;
+    
+}
+
+.home {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: space-around;
+    align-items: center;
+    /*background-color:aquamarine;*/
+
+}
+
+.home img {
+    width: 300px;
+    border-radius: 20%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+
+.home img:hover {
+    transform: scale(1.1);
+}
+
+.text-container{
+    color: white;
+    font-size: 30px;
+}
+
+.text-container h2{ 
+    transition: 0.4s;
+    font-family: 'Poppins', sans-serif;
+}
+
+.text-container h3 {
+    color:#cccccc;
+    font-family: 'Monstserrat', sans-serif;
+    transition: 0.4s;
+}
+
+.text-container h2:hover, h3:hover {
+    transform: scale(1.1)
+}
+
+.btn {
+    padding-top: 10px;
+}
+
+.btn .cv-btn {
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 20px; 
+    background-color: #1B56FD;
+    color: white;
+    border: 3px solid #0ef;
+    padding: 8px;
+    transition: 0.4s;
+    font-weight: 550;
+
+}
+
+.cv-btn:hover{
+    box-shadow: 0 0 10px #0ef;
+}
+
+.text-container h2:hover {
+    color:aquamarine;
+    text-shadow: 2px 2px #1B56FD;
+}
+
+.about {
+    color: white;
+}
+
+.about-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 40px;
+    
+}
+
+.about h1 {
+    margin-bottom: 20px;
+}
+
+.text-about {
+    padding: 20px;
+    width: 50%;
+    text-align: justify;
+    /*background: red;*/
+}
+
+.pendidikan {
+    width: 50%;
+    /*background-color: blue;*/
+    padding: 20px;
+    color: white;
+}
+
+
+.pendidikan ul {
+    list-style: none;
+    padding: 0;
+}
+
+.edu-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.edu-text {
+    color: white;
+    padding-left: 10px;
+}
+
+.edu-img {
+    width: 250px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.5s forwards;
+    animation-delay: 0.3s;
+}
+
+.edu-img:nth-child(1) {
+    animation-delay: 0.5s;
+}
+
+.edu-img:nth-child(2) {
+    animation-delay: 0.7s;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.keterangan 
+{ 
+    display: block;
+    font-size: 14px;
+    color: #cccccc;
+    margin-top: 5px;
+}
+
+.text-about img {
+    width: 250px;
+
+}
+
+.experience  {
+    margin: 20px;
+    color: white;
+}
+
+.experience ul {
+    list-style: none;
+}
+
+.home-sci a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #0ef;
+    border-radius: 50%;
+    font-size: 20px;
+    text-decoration: none;
+    margin: 10px 15px 10px 0;
+    color: #0ef;
+    transition: 0.4s;
+}
+
+.home-sci a:hover {
+    background: #0ef;
+    box-shadow: 0 0 20px #0ef;
+}
+    
+
+.experience {
+    margin: 20px;
+    color: white;
+}
+
+.experience-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    gap: 20px;
+}
+
+.experience-item {
+    background-color: #2a2d3b;
+    
+    padding: 20px;
+    display: flex;
+    
+}
+
+.experience-item img {
+    width: 80px;
+    height: 80px;
+    margin-right: 15px;
+
+}
+
+.experience-img {
+    width: 80px;
+    height: 80px;
+    margin-right: 15px;
+    border-radius: 5px;
+
+}
+
+.experience-text h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.experience-text p {
+    margin: 5px 0;
+    font-size: 14px;
+}
